@@ -2,14 +2,14 @@ import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
-import SignInScreen from '../SignInScreen';
-import GroupsScreen from '../GroupsScreen';
-import AddGroupScreen from '../AddGroupScreen';
-import ChatScreen from '../ChatScreen';
+import SignInScreen from '../screens/SignInScreen';
+import GroupsScreen from '../screens/GroupsScreen';
+import AddGroupScreen from '../screens/AddGroupScreen';
+import ChatScreen from '../screens/ChatScreen';
 
 const Stack = createStackNavigator();
 
-function MainStackNavigator() {
+function ChatFlow() {
   return (
     <NavigationContainer>
       <Stack.Navigator name="Chat">
@@ -38,8 +38,8 @@ function MainStackNavigator() {
   );
 }
 
-/*function MainStackNavigator() {
+function MainStackNavigator() {
   return ChatFlow();
-}*/
+}
 
 export default MainStackNavigator;
